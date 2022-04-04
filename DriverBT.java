@@ -6,10 +6,10 @@ public class DriverBT
 		BinaryTree<String> aTree = new BinaryTree<>();
 		createTree1(aTree);
 		
-		System.out.println("(binaryTree) post-order: ");
+		System.out.println("(BinaryTree) post-order: ");
 		aTree.postorderTraverse();
 		
-		System.out.println("(binaryNode) post-order: ");
+		System.out.println("(BinaryNode) post-order: ");
 		aTree.postorderTraverse_callBinaryNodeMethod();
 		
 		System.out.println();
@@ -29,10 +29,10 @@ public class DriverBT
 		BinaryTree<String> aTree2 = new BinaryTree<>();
 		createTree2(aTree2);
 		
-		System.out.println("(binaryTree) post-order: ");
+		System.out.println("(BinaryTree) post-order: ");
 		aTree2.postorderTraverse();
 		
-		System.out.println("(binaryNode) post-order: ");
+		System.out.println("(BinaryNode) post-order: ");
 		aTree2.postorderTraverse_callBinaryNodeMethod();
 		
 		System.out.println();
@@ -76,8 +76,29 @@ public class DriverBT
 	/**-------------------------------------------------------------------- */
 	/**Task 4: Create a tree case as shown in assignment 3*/
 	public static void createTree2(BinaryTree<String> tree)
-	{ 
+	{
+		// Leaves
+		BinaryTree<String> bTree = new BinaryTree<>("B");
+		BinaryTree<String> fTree = new BinaryTree<>("F");
+		BinaryTree<String> gTree = new BinaryTree<>("G");
+		BinaryTree<String> hTree = new BinaryTree<>("H");
 
+		// Subtrees:
+		BinaryTree<String> dTree = new BinaryTree<>("D", fTree, null);
+		BinaryTree<String> eTree = new BinaryTree<>("E", gTree, hTree);
+		BinaryTree<String> cTree = new BinaryTree<>("C", dTree, eTree);
+
+		tree.setTree("A", bTree, cTree);
+
+		System.out.println("\nGiven Tree:\n");
+		System.out.println("      A      ");
+		System.out.println("    /   \\  ");
+		System.out.println("   B     C  ");
+		System.out.println("       /   \\  ");
+		System.out.println("      D     E ");
+		System.out.println("     /    /   \\");
+		System.out.println("    F    G     H");
+		System.out.println();
 	} // end createTree2
 
 }  // end DriverBT
