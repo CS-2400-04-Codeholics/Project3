@@ -124,10 +124,14 @@ class BinaryNode<T>
    /** A Recursive Method in the BinaryNode Class   
     * Computes the height of the subtree rooted at "this" node.
    @return  The height of the subtree rooted at "this" node. */
-   public int getHeight_binaryNodeMethod()
-   {  
-	   return 0;
-   } // end getHeight
+   public int getHeight_binaryNodeMethod(BinaryNode node){
+        if(node==null)
+        return 0;  
+        return 1+Math.max(getHeight_binaryNodeMethod(node.left), getHeight_binaryNodeMethod(node.right));}
+        
+            public int getHeight_callBinaryNodeMethod(){
+        return getHeight_binaryNodeMethod(root);
+        } // end getHeight
    
    /** -------------------------------------------------------------------- */
    /** A Recursive Method in the BinaryNode Class  
