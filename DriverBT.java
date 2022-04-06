@@ -1,51 +1,52 @@
-public class DriverBT 
+public class DriverBT
 {
 	public static void main(String[] args)
 	{
-		System.out.println("1st Testing Example:");
+		System.out.print("1st Testing Example:\n");
 		BinaryTree<String> aTree = new BinaryTree<>();
 		createTree1(aTree);
 		
-		System.out.println("(BinaryTree) post-order: ");
+		System.out.print("(BinaryTree) post-order:\n");
 		aTree.postorderTraverse();
 		
-		System.out.println("(BinaryNode) post-order: ");
+		System.out.print("(BinaryNode) post-order:\n");
 		aTree.postorderTraverse_callBinaryNodeMethod();
 		
-		System.out.println();
+		System.out.print("\n");
 		
-		System.out.println("(BinaryTree) Height of tree is " + aTree.getHeight());
-		System.out.println("(BinaryNode) Height of tree is " + aTree.getHeight_callBinaryNodeMethod());
+		System.out.print("(BinaryTree) Height of tree is " + aTree.getHeight() + "\n");
+		System.out.print("(BinaryNode) Height of tree is " + aTree.getHeight_callBinaryNodeMethod() + "\n");
 		
-		System.out.println();
+		System.out.print("\n");
 		
-		System.out.println("(BinaryTree) # nodes of tree is " + aTree.getNumberOfNodes());
-		System.out.println("(BinaryNode) # nodes of tree is " + aTree.getNumberOfNodes_callBinaryNodeMethod());
+		System.out.print("(BinaryTree) # nodes of tree is " + aTree.getNumberOfNodes() + "\n");
+		System.out.print("(BinaryNode) # nodes of tree is " + aTree.getNumberOfNodes_callBinaryNodeMethod() + "\n");
 
-		System.out.println("==========================================");
-		System.out.println();
+		System.out.print("==========================================\n");
+		System.out.print("\n");
 		
-		System.out.println("2nd Testing Example:");
+		System.out.print("2nd Testing Example:\n");
 		BinaryTree<String> aTree2 = new BinaryTree<>();
 		createTree2(aTree2);
 		
-		System.out.println("(BinaryTree) post-order: ");
+		System.out.print("(BinaryTree) post-order:\n");
 		aTree2.postorderTraverse();
 		
-		System.out.println("(BinaryNode) post-order: ");
+		System.out.print("(BinaryNode) post-order:\n");
 		aTree2.postorderTraverse_callBinaryNodeMethod();
 		
-		System.out.println();
+		System.out.print("\n");
 		
-		System.out.println("(BinaryTree) Height of tree is " + aTree2.getHeight());
-		System.out.println("(BinaryNode) Height of tree is " + aTree2.getHeight_callBinaryNodeMethod());
+		System.out.print("(BinaryTree) Height of tree is " + aTree2.getHeight() + "\n");
+		System.out.print("(BinaryNode) Height of tree is " + aTree2.getHeight_callBinaryNodeMethod() + "\n");
 		
-		System.out.println();
+		System.out.print("\n");
 		
-		System.out.println("(BinaryTree) # nodes of tree is " + aTree2.getNumberOfNodes());
-		System.out.println("(BinaryNode) # nodes of tree is " + aTree2.getNumberOfNodes_callBinaryNodeMethod());
+		System.out.print("(BinaryTree) # nodes of tree is " + aTree2.getNumberOfNodes() + "\n");
+		System.out.print("(BinaryNode) # nodes of tree is " + aTree2.getNumberOfNodes_callBinaryNodeMethod() + "\n");
 		
-		System.out.println("Done.");
+		System.out.print("Done.\n");
+
 	}  // end main
 
 	public static void createTree1(BinaryTree<String> tree)
@@ -62,15 +63,15 @@ public class DriverBT
 
 		tree.setTree("A", bTree, cTree);
 		
-      System.out.println("\nGiven Tree:\n");
-      System.out.println("     A      ");
-      System.out.println("   /   \\  ");
-      System.out.println("  B     C  ");
-      System.out.println(" / \\   /  ");
-      System.out.println("D   E  F   ");
-      System.out.println("        \\ ");
-      System.out.println("         G ");
-      System.out.println();
+      	System.out.print("\nGiven Tree:\n\n");
+      	System.out.print("     A\n");
+      	System.out.print("   /   \\\n");
+      	System.out.print("  B     C\n");
+      	System.out.print(" / \\   /\n");
+      	System.out.print("D   E  F\n");
+      	System.out.print("        \\\n");
+      	System.out.print("         G\n");
+      	System.out.print("\n");
 	} // end createTree
 	
 	/**-------------------------------------------------------------------- */
@@ -90,15 +91,15 @@ public class DriverBT
 
 		tree.setTree("A", bTree, cTree);
 
-		System.out.println("\nGiven Tree:\n");
-		System.out.println("      A      ");
-		System.out.println("    /   \\  ");
-		System.out.println("   B     C  ");
-		System.out.println("       /   \\  ");
-		System.out.println("      D     E ");
-		System.out.println("     /    /   \\");
-		System.out.println("    F    G     H");
-		System.out.println();
+		System.out.print("\nGiven Tree:\n\n");
+		System.out.print("      A\n");
+		System.out.print("    /   \\\n");
+		System.out.print("   B     C\n");
+		System.out.print("       /   \\\n");
+		System.out.print("      D     E\n");
+		System.out.print("     /    /   \\\n");
+		System.out.print("    F    G     H\n");
+		System.out.print("\n");
 	} // end createTree2
 
 }  // end DriverBT
