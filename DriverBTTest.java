@@ -7,11 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DriverBTTest
 {
-    private final ByteArrayOutputStream out = new ByteArrayOutputStream();
-
     @Test
     void main()
     {
+        final ByteArrayOutputStream out = new ByteArrayOutputStream();
+
         String expectedOutput = """
             1st Testing Example:
 
