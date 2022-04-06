@@ -9,7 +9,7 @@ public class DriverBT
 		System.out.print("(BinaryTree) post-order:\n");
 		aTree.postorderTraverse();
 		
-		System.out.print("(BinaryNode) post-order:\n");
+		System.out.print("\n(BinaryNode) post-order:\n");
 		aTree.postorderTraverse_callBinaryNodeMethod();
 		
 		System.out.print("\n");
@@ -32,7 +32,7 @@ public class DriverBT
 		System.out.print("(BinaryTree) post-order:\n");
 		aTree2.postorderTraverse();
 		
-		System.out.print("(BinaryNode) post-order:\n");
+		System.out.print("\n(BinaryNode) post-order:\n");
 		aTree2.postorderTraverse_callBinaryNodeMethod();
 		
 		System.out.print("\n");
